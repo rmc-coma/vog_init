@@ -1,0 +1,18 @@
+dig -x 10.51.1.81
+
+; <<>> DiG 9.8.3-P1 <<>> -x 10.51.1.81
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 6719
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;81.1.51.10.in-addr.arpa.	IN	PTR
+
+;; ANSWER SECTION:
+81.1.51.10.in-addr.arpa. 3157	IN	PTR	ldap-proxy.42.fr.
+
+;; Query time: 1 msec
+;; SERVER: 10.51.1.42#53(10.51.1.42)
+;; WHEN: Wed Jan 31 04:06:56 2018
+;; MSG SIZE  rcvd: 71

@@ -1,0 +1,7 @@
+#!/bin/bash
+COND=`md5sum /etc/crontab`
+HASH=`cat /var/log/cronhash`
+if [[ $COND != $HASH ]]
+then
+	echo "crontab modified" | mail -s "Alert" root
+fi
